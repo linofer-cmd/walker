@@ -1,0 +1,6 @@
+{
+  "name": "FETS Walk & DVR",
+  "description": "Digital co-pilot and duty tracker for security teams and CCTV control room operators with patrol timers, DVR health audits, fatigue watch, and shift handovers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

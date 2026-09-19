@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0A0B0E;
+    color: #F5F3EE;
+  }
+}
+
+.font-telemetry {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-luxury {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+/* Luxury gold & obsidian subtle scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 11, 14, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(180, 150, 90, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.6);
+}
+
+/* Conspicuous Visual Light Blink Animations (Silent Alarm) */
+@keyframes lightBlink {
+  0%, 100% {
+    box-shadow: 0 0 40px rgba(245, 200, 70, 0.85), inset 0 0 25px rgba(245, 200, 70, 0.35);
+    border-color: rgba(245, 215, 90, 1);
+  }
+  50% {
+    box-shadow: 0 0 6px rgba(245, 200, 70, 0.15);
+    border-color: rgba(245, 215, 90, 0.25);
+  }
+}
+
+@keyframes beaconPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: drop-shadow(0 0 16px rgba(245, 200, 70, 0.9));
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 2px rgba(245, 200, 70, 0.2));
+  }
+}
+
+.animate-light-blink {
+  animation: lightBlink 0.9s ease-in-out infinite;
+}
+
+.animate-beacon-pulse {
+  animation: beaconPulse 0.75s ease-in-out infinite;
+}
